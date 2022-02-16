@@ -66,7 +66,13 @@
 		.enterprise .expand .container {
 		    flex-direction: row;
 		    height: 100px;
+			-webkit-animation: fadein 2s; 
+			-moz-animation: fadein 2s; 
+			-ms-animation: fadein 2s; 
+			 -o-animation: fadein 2s; 
+				animation: fadein 2s; 
 		}
+		
 		.enterprise .container .icon{
 		  font-size: 40px;
 		  width: 150px;
@@ -75,16 +81,28 @@
 		  font-size: 1.5em;
 		  width: 150px;
 		}
-		.content{
+		.enterprise .content{
 		  border-top: 2px solid;
 		    margin: 0 15px;
 		}
-		.content ul{
+		.enterprise .content ul{
 		  column-count: 2;
+		  padding-left: 10px;
 		}
-		.content li{
+		.enterprise .content li{
 		  line-height: 1.5em;
 		  font-size: 1.2em;
+		}
+		.enterprise .content a{
+			text-decoration: none;
+			color: #fff;
+		}
+		.enterprise .content li:hover a{
+			/*margin-left: 2px;*/
+			font-weight: 700;
+		}
+		.enterprise .content li:hover a:before{
+			content: "▸";
 		}
 
 
@@ -156,6 +174,35 @@
 		    height: 150px;
 		  }
 		}
+		
+		@keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+
+		@-moz-keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+
+		@-webkit-keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+
+		@-ms-keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+
+
+		@-o-keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
 	</style>
 </head>
 <body>
@@ -193,13 +240,13 @@
 
 	      <div class='content'>
 	        <ul>
-	          <li>專區首頁</li>
-	          <li>自主學習</li>
-	          <li>人才培育</li>
-	          <li>自主學習成果競賽</li>
-	          <li>深度體驗營</li>
-	          <li>新課綱選修課</li>
-	          <li>夥伴學校</li>
+	          <li><a href="https://www.ewant.org/local/enterprise/collegepage.php?id=20">專區首頁</a></li>
+	          <li><a href="#">自主學習</a></li>
+	          <li><a href="#">人才培育</a></li>
+	          <li><a href="#">自主學習成果競賽</a></li>
+	          <li><a href="#">深度體驗營</a></li>
+	          <li><a href="#">新課綱選修課</a></li>
+	          <li><a href="#">夥伴學校</a></li>
 	        </ul> 
 	      </div>
 	    </div>
@@ -211,8 +258,8 @@
 
 	      <div class='content'>
 	        <ul>
-	          <li>跨校通識學分</li>
-	          <li>SOS暑期線上學院</li>
+				<li><a href="#">跨校通識學分</a></li>
+				<li><a href="#">SOS暑期線上學院</a></li>
 	        </ul> 
 	      </div>
 	    </div>
@@ -225,10 +272,10 @@
 
 	      <div class='content'>
 	        <ul>
-	          <li>公務人員訓練</li>
-	          <li>付費及證照課程</li>
-	          <li>流通冷練管理師</li>
-	          <li>企業教育訓練</li>
+	          <li><a href="#">公務人員訓練</a></li>
+	          <li><a href="#">付費及證照課程</a></li>
+	          <li><a href="#">流通冷練管理師</a></li>
+	          <li><a href="#">企業教育訓練</a></li>
 	        </ul> 
 	      </div>
 	    </div>
@@ -242,9 +289,9 @@
 
 	      <div class='content'>
 	        <ul>
-	          <li>隨選課程</li>
-	          <li>系列課程</li>
-	          <li>教育部學習深化計畫</li>
+	          <li><a href="#">隨選課程</a></li>
+	          <li><a href="#">系列課程</a></li>
+	          <li><a href="#">教育部學習深化計畫</a></li>
 	        </ul> 
 	      </div>
 	    </div>
@@ -257,7 +304,7 @@
 
 	      <div class='content'>
 	        <ul>
-	          <li>教師增能</li>
+	          <li><a href="#">教師增能</a></li>
 	        </ul> 
 	      </div>
 	    </div>
@@ -353,11 +400,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
-	var arr = [];
-
 
 var arr = [];
-
+var leaveindex = null;
 
 $(".item>.container").mouseenter(function(event){
 	console.log('mouseenter');
@@ -373,20 +418,19 @@ $(".item>.container").mouseenter(function(event){
 			if(arr.length){
 				arr.pop();
 			}
-		}, 100);
+		}, 50);
 	}
 });
 
 
 $(".item").mouseleave(function(event){
 	
-	
-  console.log('mouseleave');
-  if( !arr.includes($('.item').index(this)) ){
-	$(".expand").removeClass('expand');
-	$(this).addClass('shrink');
+	if( !arr.includes($('.item').index(this)) ){
+		console.log('mouseleave');
+		$(".expand").removeClass('expand');
+		$(this).addClass('shrink');
 
-  }
+	}
 });     
 </script>
 </body>
