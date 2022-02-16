@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ewantindex_demp02</title>
+	<title>ewantindex_demp03</title>
 	<meta charset="utf-8"> 
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -49,12 +49,11 @@
 		.tab-label:hover {
 			background: #d8d8d8;
 		}
-
-		
 		.tab-label:last-child:hover, .tab-label.fixed:hover {
 			color: #fff;
 			background: #d7413d;
 		}
+
 
 		.tab-label.active {
 			background: #fff;
@@ -64,7 +63,6 @@
 		.tab-label:last-child a, .tab-label.fixed a, .tab-label:last-child:hover a, .tab-label.fixed:hover a{
 			color: #fff;
 		}
-
 		.tab-label.active a{
 			color: #f14d49;
 		}
@@ -114,6 +112,54 @@
 			border-radius: 20px;
 			margin: 5px 10px;
 		}
+		.en-btn {
+			display: block;
+			text-align: center;
+			cursor: pointer;
+			outline: none;
+			overflow: hidden;
+			position: relative;
+			color: #1d65a6;
+			font-weight: 700;
+			font-size: 1.2em;
+			background-color: #fff;
+			min-width: 180px;
+			max-width: 200px;
+			height: 60px;
+			border: 2px solid #1d65a6;
+			margin: 10px 5px;
+			transition: all .3s ease-in-out;
+			border-radius: 5px;
+			border-bottom-width: 10px;
+		}
+
+		.en-btn span {
+		  position: relative; 
+		  z-index: 1;
+		}
+
+		.en-btn:after {
+		  content: "";
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  height: 105%;
+		  width: 105%;
+		  background: #1d65a6;
+		  -webkit-transition: all .5s ease-in-out;
+		  transition: all .5s ease-in-out;
+		  -webkit-transform: translateX(-100%);
+		  transform: translateX(-100%);
+		}
+		.en-btn:hover{
+		  color: #fff;
+		  border-color: #f9a200;
+		}
+		.en-btn:hover:after {
+		  -webkit-transform: translateX(0%);
+		  transform: translateX(0%) ;
+		}
+
 
 	</style>
 </head>
@@ -156,53 +202,49 @@
 		<div class="tab-panel">
 			<h2>高中數位教學專區</h2>
 			<div class='content'>
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/217/0527_tag02.png" style="">
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/297/1126_V1_02_%E9%A6%96%E9%A0%81%E5%85%A5%E5%8F%A3%E6%A8%99%E7%B1%A4.png" style="">
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/217/0527_tag02.png" style="">
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/297/1126_V1_02_%E9%A6%96%E9%A0%81%E5%85%A5%E5%8F%A3%E6%A8%99%E7%B1%A4.png" style="">
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/217/0527_tag02.png" style="">
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/297/1126_V1_02_%E9%A6%96%E9%A0%81%E5%85%A5%E5%8F%A3%E6%A8%99%E7%B1%A4.png" style="">
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/217/0527_tag02.png" style="">
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/297/1126_V1_02_%E9%A6%96%E9%A0%81%E5%85%A5%E5%8F%A3%E6%A8%99%E7%B1%A4.png" style="">
+			   <button class="en-btn"><span>新北市</span></button>
+				<button class="en-btn"><span>桃園市</span></button>
 			</div>
 		</div>
 		<div class="tab-panel">
 		  <h2>高中生</h2>
 		  <div class='content'>
-			<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/30/%E9%AB%98%E4%B8%AD%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E8%A8%88%E7%95%ABLOGO_02.jpg" style="">
-			<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/64/0820_267x150.png" style="">
-			<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/266/%E5%9C%96%E7%89%871_0617_267x150.png" style="">
-			<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/279/%E5%B0%8F%E5%9C%96.png" style="">
-			<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/29/%E8%AA%B2%E7%A8%8B%E5%B1%95%E7%A4%BA%E5%8D%80%20%281%29.jpg" style="">
-			<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/35/%E5%A4%A5%E4%BC%B4%E5%AD%B8%E6%A0%A1%E5%B0%88%E5%8D%80%20%281%29.jpg" style="">
+			<button class="en-btn"><span>專區首頁</span></button>
+			<button class="en-btn"><span>自主學習</span></button>
+			<button class="en-btn"><span>人才培育</span></button>
+			<button class="en-btn"><span>自主學習成果競賽</span></button>
+			<button class="en-btn"><span>深度體驗營</span></button>
+			<button class="en-btn"><span>新課綱選修課</span></button>
+			<button class="en-btn"><span>夥伴學校</span></button>
 		  </div>
 		</div>
 		<div class="tab-panel">
 			<h2>大學生</h2>
 			<div class='content'>
-			<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/2/3-25.png" style="">
-			   <img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/5/3-25.png" style="">
-			  </div>
+				<button class="en-btn"><span>跨校通識學分</span></button>
+				<button class="en-btn"><span>SOS暑期線上學院</span></button>
+			</div>
 		</div>
 		<div class="tab-panel">
-			<h2>在職進修</h2>
-			<div class='content'>
-				<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/13/3-32.png" style="">
-				<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/6/3-33.png" style="">
-				<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/1/3-31.png" style="">
-			</div>
+			  <h2>在職進修</h2>
+			  <div class='content'>
+				<button class="en-btn"><span>公務人員訓練</span></button>
+				<button class="en-btn"><span>付費及證照課程</span></button>
+				<button class="en-btn"><span>企業教育訓練</span></button>
+			  </div>
 		</div>
 		<div class="tab-panel">
 			<h2>興趣學習</h2>
 			<div class='content'>
-				<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/3/20200915-30.png" style="">
-				<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/14/3-28.png" style="">
-				<img src="https://www.ewant.org/pluginfile.php/1/local_enterprise/logo/4/3-29.png" style="">
+				<button class="en-btn"><span>隨選課程</span></button>
+				<button class="en-btn"><span>隨選課程</span></button>
+				<button class="en-btn"><span>教育部學習深化計畫</span></button>
 			</div>
 		</div>
 		<div class="tab-panel">
 			  <h2>教師增能</h2>
 			  <div class='content'>
+				<button class="en-btn"><span>教師增能</span></button>
 			 </div>
 		</div>
 		<div class="tab-panel">
