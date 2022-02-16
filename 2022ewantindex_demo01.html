@@ -356,42 +356,38 @@
 	var arr = [];
 
 
-	$(".item").mouseenter(function(event){
-		console.log('mouseenter');
-		if ($(this).hasClass('expand')){
-			// $(this).removeClass('expand');
-		}else if ($(this).hasClass('shrink')){
-			$(this).removeClass('shrink').addClass('expand');
-		}else{
-			$(this).addClass('expand');
-		}
-		if( !arr.includes($('.item').index(this)) ){
-			arr.push($('.item').index(this));
-		}
+var arr = [];
+
+
+$(".item>.container").mouseenter(function(event){
+	console.log('mouseenter');
+	if( arr.includes($('.item>.container').index(this)) ){
+		
+	}else{
+		arr.push($('.item>.container').index(this));
+		$(".expand").removeClass('expand');
+		$(".shrink").removeClass('shrink');
+		$(this).parent().addClass('expand');
+		
 		setTimeout(() => {
 			if(arr.length){
-				//$(this).removeClass('expand').addClass('shrink');
 				arr.pop();
 			}
-		}, 1000);
-	});
-	
+		}, 100);
+	}
+});
 
-	$(".item").mouseleave(function(event){
-		
-		
-	  console.log('mouseleave', $('.item').index(this),arr);
-	  if( !arr.includes($('.item').index(this)) ){
-			
-		  if ($(this).hasClass('shrink')){
-			$(this).removeClass('shrink')
-		  }else if ($(this).hasClass('expand')){
-			$(this).removeClass('expand').addClass('shrink');
-		  }else{
-			//$(this).addClass('shrink');
-		  }
-	  }
-	});    
+
+$(".item").mouseleave(function(event){
+	
+	
+  console.log('mouseleave');
+  if( !arr.includes($('.item').index(this)) ){
+	$(".expand").removeClass('expand');
+	$(this).addClass('shrink');
+
+  }
+});     
 </script>
 </body>
 </html>
