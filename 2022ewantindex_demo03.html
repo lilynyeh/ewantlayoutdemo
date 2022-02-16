@@ -347,11 +347,10 @@
 $(".tab-label:first").addClass('active');
 $('.tab-panel:first').addClass('active');
 
-$(".tab-label").hover(function(){
+$(".tab-label").click(function(){
 	let index = $('.tab-label').index(this);
 	$('.active').removeClass('active');
 	$(this).addClass('active');
-	console.log(index);
 	$('.tab-panel').eq(index).addClass('active');
 	
 });
