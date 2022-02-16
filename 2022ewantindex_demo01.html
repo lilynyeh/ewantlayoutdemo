@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ewantindex_demp01</title>
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<style type="text/css">
+		.wrap {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  max-width: 1200px;
+		  height: 400px;
+		  margin: 0 auto;
+		}
+		.item{
+		  overflow: hidden;
+		  width: 150px;
+		  height: 150px;
+		  cursor: pointer;
+		  color: white;
+		  box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+		  border-radius: 150px;
+		  background-color: #89aeed;
+		}
+		.item:nth-child(1){
+		  background-color: #f14d49;
+		}
+		.item:nth-child(2){
+		  background-color: #f9a303;
+		}
+		.item:nth-child(3){
+		  background-color: #4caf50;
+		}
+		.item:nth-child(4){
+		  background-color: #03a9f4;
+		}
+		.item:nth-child(5){
+		  background-color: #1d65a5;
+		}
+
+
+
+		.item.expand{
+		    animation: expandWidth 1s 1 forwards, expandHeight 1.5s 1 forwards;
+		    -webkit-animation: expandWidth 1s 1 forwards, expandHeight 1.5s 1 forwards;
+		    border-radius: 0;
+		}
+		.item.shrink
+		{
+		  transition: all 2.4s ease-in-out; 
+		  -webkit-transition: all 2.3s ease-in-out; 
+		 animation: shrinkWidth 1.5s 1 forwards, shrinkHeight 1s 1 forwards;
+		 -webkit-animation: shrinkWidth 1.5s 1 forwards, shrinkHeight 1s 1 forwards;
+		}
+
+		.enterprise .container {
+		  display: flex;
+		  height: 150px;
+		  flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+		}
+		.enterprise .expand .container {
+		    flex-direction: row;
+		    height: 100px;
+		}
+		.enterprise .container .icon{
+		  font-size: 40px;
+		  width: 150px;
+		}
+		.enterprise .container .title{
+		  font-size: 1.5em;
+		  width: 150px;
+		}
+		.content{
+		  border-top: 2px solid;
+		    margin: 0 15px;
+		}
+		.content ul{
+		  column-count: 2;
+		}
+		.content li{
+		  line-height: 1.5em;
+		  font-size: 1.2em;
+		}
+
+
+		@keyframes expandWidth {
+		  from {
+		    width: 100px;
+		  }
+		  to {
+		    width: 400px;
+		  }
+		}
+
+		@-webkit-keyframes expandWidth {
+		  from {
+		    width: 100px;
+		  }
+		  to {
+		    width: 400px;
+		  }
+		}
+		@keyframes expandHeight {
+		  0%,50% {
+		    height: 100px;
+		  }
+		  100% {
+		    height: 300px;
+		  }
+		}
+
+		@-webkit-keyframes expandHeight {
+		  0%,50% {
+		    height: 100px;
+		  }
+		  100% {
+		    height: 300px;
+		  }
+		}
+		@keyframes shrinkWidth {
+		    0%,50% {
+		    width: 400px;
+		  }
+		  100% {
+		    width: 150px;
+		  }
+		}
+
+		@-webkit-keyframes shrinkWidth {
+		    0%,50% {
+		    width: 400px;
+		  }
+		  100% {
+		    width: 150px;
+		  }
+		}
+		@keyframes shrinkHeight {
+		  from {
+		    height: 300px;
+		  }
+		  to {
+		    height: 150px;
+		  }
+		}
+
+		@-webkit-keyframes shrinkHeight {
+		  from {
+		    height: 300px;
+		  }
+		  to {
+		    height: 150px;
+		  }
+		}
+	</style>
+</head>
+<body>
+<nav class="nav-bar">
+	<div class="container nav-container">
+		<div class="logo">
+			<img src="img/logo.png"/>
+		</div>
+		<div class="nav">
+			<ul>
+				<li>課程類別</li>
+				<li>合作夥伴</li>
+				<li>最新消息</li>
+				<li>所有課程</li>
+			</ul>
+		</div>
+		<div class="nav-right">
+			<div>您尚未登入 (登入)</div>
+			<div>繁體中文</div>
+		</div>
+	</div>
+</nav>
+<div class="header">
+	<div class="banner">
+		<img src="img/2022高中MOOC-02.png">
+	</div>
+</div>
+<div class='enterprise'>
+	<div class="wrap">
+	    <div class='item'>
+	      <div class="container">
+	        <div class='icon'><i class="icon fa-solid fa-school"></i></div>
+	        <div class='title'>高中生</div>
+	      </div>
+
+	      <div class='content'>
+	        <ul>
+	          <li>專區首頁</li>
+	          <li>自主學習</li>
+	          <li>人才培育</li>
+	          <li>自主學習成果競賽</li>
+	          <li>深度體驗營</li>
+	          <li>新課綱選修課</li>
+	          <li>夥伴學校</li>
+	        </ul> 
+	      </div>
+	    </div>
+	    <div class='item'>
+	      <div class="container">
+	        <div class='icon'><i class="icon fa-solid fa-user-graduate"></i></div>
+	        <div class='title'>大學生</div>
+	      </div>
+
+	      <div class='content'>
+	        <ul>
+	          <li>跨校通識學分</li>
+	          <li>SOS暑期線上學院</li>
+	        </ul> 
+	      </div>
+	    </div>
+
+	    <div class='item'>
+	      <div class="container">
+	        <div class='icon'><i class="icon fa-solid fa-book-open"></i></div>
+	        <div class='title'>在職進修</div>
+	      </div>
+
+	      <div class='content'>
+	        <ul>
+	          <li>公務人員訓練</li>
+	          <li>付費及證照課程</li>
+	          <li>流通冷練管理師</li>
+	          <li>企業教育訓練</li>
+	        </ul> 
+	      </div>
+	    </div>
+
+
+	    <div class='item'>
+	      <div class="container">
+	        <div class='icon'><i class="icon fa-solid fa-book-open"></i></div>
+	        <div class='title'>興趣學習</div>
+	      </div>
+
+	      <div class='content'>
+	        <ul>
+	          <li>隨選課程</li>
+	          <li>系列課程</li>
+	          <li>教育部學習深化計畫</li>
+	        </ul> 
+	      </div>
+	    </div>
+
+	    <div class='item'>
+	      <div class="container">
+	        <div class='icon'><i class="icon fa-solid fa-chalkboard-user"></i></div>
+	        <div class='title'>教師增能</div>
+	      </div>
+
+	      <div class='content'>
+	        <ul>
+	          <li>教師增能</li>
+	        </ul> 
+	      </div>
+	    </div>
+	    
+	  </div>
+</div>
+<div class='news container'>
+	<h2>網站公告Latest News</h2>
+	<div class='news-content'>
+		<div class="time">2022年 01月 26日(三) 13:49</div>
+		<div class="title">【平台公告】ewant育網1/28(五)至2/7(一) 客服暫停服務</div>
+	</div>
+	<div class='news-content'>
+		<div class="time">2020年 09月 15日(二) 10:34</div>
+		<div class="title">【新手上路】ewant上課簡單上手</div>
+	</div>
+	<div class='news-content'>
+		<div class="time">2021年 09月 29日(三) 18:35</div>
+		<div class="title">【平台公告】ewant育網歡迎您，免費註冊，立即選課</div>
+	</div>
+	<div class='news-content'>
+		<div class="more">
+			過期的主題 ...
+		</div>
+	</div>
+</div>
+<div class='courselist container'>
+	<h2>近期開課</h2>
+	<div class="courselist-contents">
+		<div class="course-item">
+			<div class="course-img"></div>
+			<div class="course-content">
+				<h3>課名</h3>
+				<p>內容內容內容內容內容內容內容內容</p>
+			</div>
+		</div>
+		<div class="course-item">
+			<div class="course-img"></div>
+			<div class="course-content">
+				<h3>課名</h3>
+				<p>內容內容內容內容內容內容內容內容</p>
+			</div>
+		</div>
+		<div class="course-item">
+			<div class="course-img"></div>
+			<div class="course-content">
+				<h3>課名</h3>
+				<p>內容內容內容內容內容內容內容內容</p>
+			</div>
+		</div>
+		<div class="course-item">
+			<div class="course-img"></div>
+			<div class="course-content">
+				<h3>課名</h3>
+				<p>內容內容內容內容內容內容內容內容</p>
+			</div>
+		</div>
+		<div class="course-item">
+			<div class="course-img"></div>
+			<div class="course-content">
+				<h3>課名</h3>
+				<p>內容內容內容內容內容內容內容內容</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class='footer'>
+	<div class="contents container">
+		<div class="item">
+			<p>
+				由國立陽明交通大學於2013年建立的ewant育網開放教育平臺是臺灣第一個磨課師(massive open online courses, MOOCs)平臺，採用開放源碼的moodle線上教學系統作為平臺的核心，旨在為所有願意投入MOOCs運動的學校及單位提供一個展示及經營課程的平臺，也為所有想要免費利用線上課程的學習者提供方便的學習機會。
+			</p>
+		</div>
+		<div class="item">
+			<ul>
+				<li>關於育網</li>
+				<li>平台操作手冊</li>
+				<li>常見問題</li>
+				<li>退款流程</li>
+				<li>聯絡我們</li>
+				<li>APP下載</li>
+				<li>網站服務條款</li>
+			</ul>
+		</div>
+		<div class="item"></div>
+	</div>
+	<div class="copy-right">
+		<p>ewant育網平台由國立陽明交通大學維護經營<br>
+		ewant建置在中華電信hicloud雲端服務之上<br>
+		瀏覽器支援Google Chrome、Mozilla Firefox、Safari，電腦5M/384K以上頻寬，行動載具建議3G以上網路。</p>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var arr = [];
+
+
+	$(".item").mouseenter(function(event){
+		console.log('mouseenter');
+		if ($(this).hasClass('expand')){
+			// $(this).removeClass('expand');
+		}else if ($(this).hasClass('shrink')){
+			$(this).removeClass('shrink').addClass('expand');
+		}else{
+			$(this).addClass('expand');
+		}
+		if( !arr.includes($('.item').index(this)) ){
+			arr.push($('.item').index(this));
+		}
+		setTimeout(() => {
+			if(arr.length){
+				//$(this).removeClass('expand').addClass('shrink');
+				arr.pop();
+			}
+		}, 1000);
+	});
+	
+
+	$(".item").mouseleave(function(event){
+		
+		
+	  console.log('mouseleave', $('.item').index(this),arr);
+	  if( !arr.includes($('.item').index(this)) ){
+			
+		  if ($(this).hasClass('shrink')){
+			$(this).removeClass('shrink')
+		  }else if ($(this).hasClass('expand')){
+			$(this).removeClass('expand').addClass('shrink');
+		  }else{
+			//$(this).addClass('shrink');
+		  }
+	  }
+	});    
+</script>
+</body>
+</html>
