@@ -102,8 +102,11 @@
 		  flex-wrap: wrap;
 		}
 		.tab-panel .content img{
-		  max-width: 200px;
-		  margin: 10px;
+		  max-width: 180px;
+		  margin: 10px 5px;
+		}
+		.tab-panel .content img:not(:nth-child(6n)) {
+			margin-right: calc(6% / 4);
 		}
 
 		.tab-panel .content .item{
