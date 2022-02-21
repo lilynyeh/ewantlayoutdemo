@@ -6,15 +6,17 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<style type="text/css">
+		html {
+		  scroll-behavior: smooth;
+		}
 		.wrap {
 		  display: flex;
-		  justify-content: space-between;
 		  align-items: center;
 		  max-width: 1200px;
-		  height: 400px;
+		  height: 350px;
 		  margin: 0 auto;
 		}
-		.item{
+		.en-item{
 		  overflow: hidden;
 		  width: 150px;
 		  height: 150px;
@@ -23,31 +25,32 @@
 		  box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
 		  border-radius: 150px;
 		  background-color: #89aeed;
+		  margin: 0 auto;
 		}
-		.item:nth-child(1){
+		.en-item:nth-child(1){
 		  background-color: #f14d49;
 		}
-		.item:nth-child(2){
+		.en-item:nth-child(2){
 		  background-color: #f9a303;
 		}
-		.item:nth-child(3){
+		.en-item:nth-child(3){
 		  background-color: #4caf50;
 		}
-		.item:nth-child(4){
+		.en-item:nth-child(4){
 		  background-color: #03a9f4;
 		}
-		.item:nth-child(5){
+		.en-item:nth-child(5){
 		  background-color: #1d65a5;
 		}
 
 
 
-		.item.expand{
+		.en-item.expand{
 		    animation: expandWidth 1s 1 forwards, expandHeight 1.5s 1 forwards;
 		    -webkit-animation: expandWidth 1s 1 forwards, expandHeight 1.5s 1 forwards;
 		    border-radius: 0;
 		}
-		.item.shrink
+		.en-item.shrink
 		{
 		  transition: all 2.4s ease-in-out; 
 		  -webkit-transition: all 2.3s ease-in-out; 
@@ -104,8 +107,172 @@
 		.enterprise .content li:hover a:before{
 			content: "▸";
 		}
+		
+		.headerbeneath {
+			position: relative;
+			max-width: 680px;
+			margin: 0 auto 0;
+		}
+		.headerbeneath .container {
+			display: flex;
+			line-height: 2em;
+			font-size: 1.2em;
+			position: absolute;
+			top: -50px;
+			z-index: 2;
+			justify-content: center;
+			left: 0;
+			right: 0;
+		}
+		.headerbeneath .container .hb-item {
+			padding: 20px 15px;
+			background-color: #72a2c0; /*#1d65a5;#183054*/
+			color: #fff;
+			display: flex;
+			/*flex-direction: column*/;
+			align-items: center;
+			text-decoration: none;
+		}
+		.headerbeneath .container .hb-item:first-child{
+			    border-radius: 10px 0 0 10px;
+		}
+		.headerbeneath .container .hb-item:last-child{
+			    border-radius: 0 10px 10px 0;
+		}
+		.headerbeneath .container .hb-item:hover{
+			box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+		}
+
+		.headerbeneath .container .hb-item .icon{
+			font-size: 1.8em;
+			padding-right: 5px;
+		}
+		.right-content{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.right-content:after {
+		  content: "";
+		  flex: auto;
+		}
+		
+		.map-item-col{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 5px;
+			box-shadow: 0 0 2px 0 rgb(0 0 0 / 27%);
+			border-radius: 10px 10px;
+			cursor: pointer;
+		}
+		.map-item-col:hover .map-title {
+			box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+		}
+		.map-item-col .map-img, .map-item-row .map-img{
+			max-width: 80px;
+			max-height: 80px;
+			padding: 5px 10px;
+		}
+		
+		.map-item-col .map-title {
+			background-color: #1d65a5;
+			color: #fff;
+			width: 100%;
+			line-height: 2em;
+			text-align: center;
+			border-radius: 0 0 10px 10px;
+		}
+		.map-item-col:nth-child(even) .map-title{
+			background-color: #72a2c0;
+		}
+		.map-item-row{
+			display: flex;
+			align-items: center;
+			margin: 5px;
+			box-shadow: 0 0 2px 0 rgb(0 0 0 / 27%);
+			border-radius: 10px 10px;
+			cursor: pointer;
+		}
 
 
+		.map-item-row .map-title {
+			padding: 0 10px;
+		}
+		
+		.map-content{
+			display: flex;
+			align-items: flex-start;
+		}
+		.map-content img{
+			width: 50%;
+			margin: 0 auto;
+		}
+		.map-content .map-country-list{
+			width: 260px;
+			padding: 20px;
+			background-color: #fff;
+			width: 200px;
+			box-shadow: 0 0 2px 0 rgb(0 0 0 / 27%);
+		}
+		.map-content .map-country-list p{
+			line-height: 2em;
+			font-size: 1.1em;
+			font-weight: 700;
+			border-top: solid 1px #e4f0ec;
+			border-bottom: solid 1px #e4f0ec;
+			text-align: center
+		}
+		.map-content .map-country-list ul{
+			padding-left: 0;
+		}
+		.map-content .map-country-list ul li{
+			position: relative;
+			overflow: hidden;
+			line-height: 2em;
+			padding: 0 10px;
+			margin-bottom: 5px;
+		}
+		.map-content .map-country-list ul li span{
+			position: relative;
+			z-index: 1;
+		}
+		.map-content .map-country-list ul li:before{
+			background-color: #72a2c0;
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 105%;
+			width: 105%;
+			-webkit-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+			-webkit-transform: translateX(-98%);
+			transform: translateX(-98%);
+			
+		}
+		.map-content .map-country-list ul li:hover span{
+			color: #fff;
+			-webkit-animation: fadein 1s; 
+			-moz-animation: fadein 1s; 
+			-ms-animation: fadein 1s;  
+			 -o-animation: fadein 1s; 
+				animation: fadein 1s; 
+		}
+		.map-content .map-country-list ul li:hover:before{
+			-webkit-transform: translateX(0%);
+			transform: translateX(0%) ;
+		}
+		.map-content .map-country-list ul li:after{
+			content: "▶";
+			position: absolute;
+			right: 10px;
+			color: #fff;
+			
+		}
+
+
+		
 		@keyframes expandWidth {
 		  from {
 		    width: 100px;
@@ -203,6 +370,7 @@
 			from { opacity: 0; }
 			to   { opacity: 1; }
 		}
+
 	</style>
 </head>
 <body>
@@ -230,9 +398,26 @@
 		<img src="img/2022高中MOOC-02.png">
 	</div>
 </div>
+
+<div class="headerbeneath">
+	<div class="container ">
+		<a href="#map" class="hb-item">
+			<i class="icon fa-solid fa-map-location-dot"></i>
+			<div class="hb-title">高中數位教學專區</div>
+		</a>
+
+		<a class="hb-item"  onclick="location.href='https://www.ewant.org/admin/tool/mooccourse/mnetcourseinfo.php?hostid=13&amp;id=3302'">
+			<i class="icon fa-solid fa-book-open"></i>
+			<div class="hb-title">流通冷鏈管理師</div>
+		</a>
+
+	</div>
+</div>
+
+
 <div class='enterprise'>
 	<div class="wrap">
-	    <div class='item'>
+	    <div class='en-item'>
 	      <div class="container">
 	        <div class='icon'><i class="icon fa-solid fa-school"></i></div>
 	        <div class='title'>高中生</div>
@@ -250,7 +435,7 @@
 	        </ul> 
 	      </div>
 	    </div>
-	    <div class='item'>
+	    <div class='en-item'>
 	      <div class="container">
 	        <div class='icon'><i class="icon fa-solid fa-user-graduate"></i></div>
 	        <div class='title'>大學生</div>
@@ -264,7 +449,7 @@
 	      </div>
 	    </div>
 
-	    <div class='item'>
+	    <div class='en-item'>
 	      <div class="container">
 	        <div class='icon'><i class="icon fa-solid fa-book-open"></i></div>
 	        <div class='title'>在職進修</div>
@@ -281,7 +466,7 @@
 	    </div>
 
 
-	    <div class='item'>
+	    <div class='en-item'>
 	      <div class="container">
 	        <div class='icon'><i class="icon fa-solid fa-book-open"></i></div>
 	        <div class='title'>興趣學習</div>
@@ -296,7 +481,7 @@
 	      </div>
 	    </div>
 
-	    <div class='item'>
+	    <div class='en-item'>
 	      <div class="container">
 	        <div class='icon'><i class="icon fa-solid fa-chalkboard-user"></i></div>
 	        <div class='title'>教師增能</div>
@@ -330,6 +515,81 @@
 			過期的主題 ...
 		</div>
 	</div>
+</div>
+<div>
+
+<div id="map">
+	<div class="container">
+		<h2>高中數位教學專區</h2>
+		<div class="right-content">
+			<div class="map-item-row">
+				<img src="img/New_Taipei_City.png" class="map-img">
+				<div class="map-title">
+					新北市
+				</div>
+			</div>
+			<div class="map-item-row">
+				<img src="img/Taoyuan_City.png" class="map-img">
+				<div class="map-title">
+					桃園市
+				</div>
+			</div>
+		</div>
+		<div class="right-content">
+		
+			<div class="map-item-col">
+				<img src="img/New_Taipei_City.png" class="map-img">
+				<div class="map-title">
+					新北市
+				</div>
+			</div>
+			<div class="map-item-col">
+				<img src="img/Taoyuan_City.png" class="map-img">
+				<div class="map-title">
+					桃園市
+				</div>
+			</div>
+			<div class="map-item-col">
+				<img src="img/New_Taipei_City.png" class="map-img">
+				<div class="map-title">
+					新北市
+				</div>
+			</div>
+			<div class="map-item-col">
+				<img src="img/Taoyuan_City.png" class="map-img">
+				<div class="map-title">
+					桃園市
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="map2">
+	<div class="container">
+		<h2>高中數位教學專區</h2>
+		<div class="map-content">
+			<img src="img/tw.png">
+			<div class="map-country-list">
+				<div class="map-north">
+					<p>北部</p>
+					<ul>
+						<li><span>新北市</span></li>
+						<li><span>桃園市</span></li>
+					</ul>
+				</div>
+				<div class="map-center">
+					<p>中部</p>
+					<ul>
+						<li><span>臺中市</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
 </div>
 <div class='courselist container'>
 	<h2>近期開課</h2>
@@ -402,17 +662,24 @@
 <script type="text/javascript">
 
 var arr = [];
-var leaveindex = null;
 
-$(".item>.container").mouseenter(function(event){
-	console.log('mouseenter');
-	if( arr.includes($('.item>.container').index(this)) ){
+var leaveindex = null;
+$(".wrap").hover(function(event){
+	 console.log("BB", $('.en-item:hover').length, arr);
+	if ( $(".expand").length && $('.en-item:hover').length == 0) {
+	   $(".expand").removeClass('expand').addClass('shrink');
+	}
+});
+$(".en-item").mouseenter(function(event){
+	console.log('mouseenter', arr);
+
+	if( arr.includes($('.en-item').index(this)) ){
 		
 	}else{
-		arr.push($('.item>.container').index(this));
+		arr.push($('.en-item').index(this));
 		$(".expand").removeClass('expand');
 		$(".shrink").removeClass('shrink');
-		$(this).parent().addClass('expand');
+		$(this).addClass('expand');
 		
 		setTimeout(() => {
 			if(arr.length){
@@ -423,14 +690,15 @@ $(".item>.container").mouseenter(function(event){
 });
 
 
-$(".item").mouseleave(function(event){
-	
-	if( !arr.includes($('.item').index(this)) ){
-		console.log('mouseleave');
+$(".en-item").mouseleave(function(event){
+	console.log('mouseleave', arr, $('.en-item').index(this));
+	//if( !arr.includes($('.en-item').index(this)) ){
+	if(!arr.length){
 		$(".expand").removeClass('expand');
 		$(this).addClass('shrink');
 
 	}
+	
 });     
 </script>
 </body>
