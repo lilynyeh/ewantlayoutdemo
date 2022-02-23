@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ewantindex_demp01</title>
+	<title>ewantindex_demp04</title>
 	<meta charset="utf-8"> 
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,7 +24,7 @@
 		  color: white;
 		  box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
 		  border-radius: 150px;
-		  background-color: #89aeed;
+		  background-color: #7e57c2;
 		  margin: 0 auto;
 		}
 		.en-item:nth-child(1){
@@ -81,7 +81,7 @@
 		  width: 150px;
 		}
 		.enterprise .container .title{
-		  font-size: 1.5em;
+		  font-size: 2.2vmin;
 		  width: 150px;
 		}
 		.enterprise .content{
@@ -124,33 +124,7 @@
 			left: 0;
 			right: 0;
 		}
-		.headerbeneath .container .hb-item {
-			padding: 20px 15px;
-			/*background-color: #72a2c0;*/ /*#1d65a5;#183054*/
-			/*color: #fff;*/
-			background-color: #ffffff;
-			color: #72a2c0;
-			display: flex;
-			/*flex-direction: column*/;
-			align-items: center;
-			text-decoration: none;
-			box-shadow: 0 0 3px 0 rgb(0 0 0 / 27%);
-		}
-		.headerbeneath .container .hb-item:first-child{
-			border-radius: 5px 0 0 5px;
-		}
-		.headerbeneath .container .hb-item:last-child{
-			border-radius: 0 5px 5px 0;
-		}
-		.headerbeneath .container .hb-item:hover{
-			background-color: #72a2c0;
-			color: #fff;
-		}
 
-		.headerbeneath .container .hb-item .icon{
-			font-size: 1.8em;
-			padding-right: 5px;
-		}
 		.right-content{
 			display: flex;
 			flex-wrap: wrap;
@@ -208,8 +182,8 @@
 			display: flex;
 			align-items: flex-start;
 		}
-		.map-content img{
-			width: 50%;
+		.map-content img, .map-content object{
+			width: 45%;
 			margin: 0 auto;
 		}
 		.map-content .map-country-list{
@@ -235,10 +209,12 @@
 			line-height: 2em;
 			padding: 0 10px;
 			margin-bottom: 5px;
+			
 		}
 		.map-content .map-country-list ul li span{
 			position: relative;
 			z-index: 1;
+			animation: fadecolorout .5s; 
 		}
 		.map-content .map-country-list ul li:before{
 			background-color: #72a2c0;
@@ -254,13 +230,27 @@
 			transform: translateX(-98%);
 			
 		}
+		.map-content .map-country-list ul li:nth-child(1):before{
+			background-color: #f14d49;
+		}
+		.map-content .map-country-list ul li:nth-child(2):before{
+			background-color: #f9a303;
+		}
+		.map-content .map-country-list ul li:nth-child(3):before{
+			background-color: #4caf50;
+		}
+		.map-content .map-country-list ul li:nth-child(4):before{
+			background-color: #03a9f4;
+		}
+		.map-content .map-country-list ul li:nth-child(5):before{
+			background-color: #1d65a5;
+		}
+		.map-content .map-country-list ul li:nth-child(5):before{
+			background-color: #7e57c2;
+		}
 		.map-content .map-country-list ul li:hover span{
 			color: #fff;
-			-webkit-animation: fadein .5s; 
-			-moz-animation: fadein .5s; 
-			-ms-animation: fadein .5s; 
-			 -o-animation: fadein .5s; 
-				animation: fadein .5s; 
+			animation: fadecolorin .5s; 
 		}
 		.map-content .map-country-list ul li:hover:before{
 			-webkit-transform: translateX(0%);
@@ -345,6 +335,15 @@
 		  }
 		}
 		
+		@keyframes fadecolorout {
+			from { color: #fff; }
+			to   { color: rgb(84, 82, 81); }
+		}
+		@keyframes fadecolorin {
+			from { color: rgb(84, 82, 81);  }
+			to   { color: #fff; }
+		}
+		
 		@keyframes fadein {
 			from { opacity: 0; }
 			to   { opacity: 1; }
@@ -375,6 +374,8 @@
 		}
 
 	</style>
+	
+
 </head>
 <body>
 <nav class="nav-bar">
@@ -388,6 +389,7 @@
 				<li>合作夥伴</li>
 				<li>最新消息</li>
 				<li>所有課程</li>
+				<li><a href="#map2">高中數位教學專區</a></li>
 			</ul>
 		</div>
 		<div class="nav-right">
@@ -402,24 +404,23 @@
 	</div>
 </div>
 
-<div class="headerbeneath">
-	<div class="container ">
-		<a href="#map" class="hb-item">
-			<i class="icon fa-solid fa-map-location-dot"></i>
-			<div class="hb-title">高中數位教學專區</div>
-		</a>
-
-		<a class="hb-item"  onclick="location.href='https://www.ewant.org/admin/tool/mooccourse/mnetcourseinfo.php?hostid=13&amp;id=3302'">
-			<i class="icon fa-solid fa-book-open"></i>
-			<div class="hb-title">流通冷鏈管理師</div>
-		</a>
-
-	</div>
-</div>
 
 
 <div class='enterprise'>
 	<div class="wrap">
+		<div class='en-item'>
+	      <div class="container">
+	        <div class='icon'><i class="icon fa-solid fa-map-location-dot"></i></div>
+	        <div class='title'>高中數位教學專區</div>
+	      </div>
+
+	      <div class='content'>
+	        <ul>
+	          <li><a href="#">新北市</a></li>
+	          <li><a href="https://www.ewant.org/local/enterprise/collegepage.php?id=217">桃園市</a></li>
+	        </ul> 
+	      </div>
+	    </div>
 	    <div class='en-item'>
 	      <div class="container">
 	        <div class='icon'><i class="icon fa-solid fa-school"></i></div>
@@ -572,7 +573,6 @@
 	<div class="container">
 		<h2>高中數位教學專區</h2>
 		<div class="map-content">
-			<img src="img/tw.png">
 			<div class="map-country-list">
 				<div class="map-north">
 					<p>北部</p>
@@ -583,11 +583,11 @@
 				</div>
 				<div class="map-center">
 					<p>中部</p>
-					<ul>
-						<li><span>臺中市</span></li>
-					</ul>
+
 				</div>
 			</div>
+			<div id="twmap" style="width: 100%; height: 780px;"></div>
+
 		</div>
 		
 	</div>
@@ -662,7 +662,80 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/ammap.js"></script>
+<script type="text/javascript" src="js/taiwanLow.js"></script>
+<script type="text/javascript" src="js/twmapdots.js"></script>
 <script type="text/javascript">
+
+var twMap = AmCharts.makeChart("twmap",{
+	"type": "map",
+	"addClassNames": true,
+	"fontSize": 15,
+	"color": "#000000",
+	"projection": "mercator",
+	"backgroundAlpha": 1,
+	"backgroundColor": "rgba(255,255,255,0)",
+	"dataProvider": {
+		"map": "taiwanLow",
+		"getAreasFromMap": false,
+		"images": dots,
+	},
+	"balloon": {
+		"horizontalPadding": 15,
+		"borderAlpha": 0,
+		"borderThickness": 1,
+		"verticalPadding": 15
+	},
+	"areasSettings": {
+		"color": "rgba(141,211,255,1)",
+		"outlineColor": "rgba(255,255,255,1)",
+		"rollOverOutlineColor": "rgba(255,255,255,1)",
+		"rollOverBrightness": 20,
+		"selectedBrightness": 20,
+		"selectable": true,
+		"unlistedAreasAlpha": 0,
+		"unlistedAreasOutlineAlpha": 0,
+		"alpha": 0,
+		"outlineAlpha": 0
+	},
+	"imagesSettings": {
+		"alpha": 1,
+		"color": "rgba(141,211,255,1)",
+		"outlineAlpha": 0,
+		"rollOverOutlineAlpha": 0,
+		"outlineColor": "rgba(255,255,255,1)",
+		"rollOverBrightness": 20,
+		"selectedBrightness": 20,
+		"selectable": true
+	},
+	"linesSettings": {
+		"color": "rgba(141,211,255,1)",
+		"selectable": true,
+		"rollOverBrightness": 20,
+		"selectedBrightness": 20
+	},
+	"zoomControl": {
+		"zoomControlEnabled": true,
+		"homeButtonEnabled": true,
+		"panControlEnabled": false,
+		"right": 38,
+		//"bottom": 30,
+		"minZoomLevel": 0.25,
+		"gridHeight": 100,
+		"gridAlpha": 0.1,
+		"gridBackgroundAlpha": 0,
+		"gridColor": "#FFFFFF",
+		"draggerAlpha": 1,
+		"buttonCornerRadius": 2
+	}
+});
+AmCharts.ready(function() {
+	twMap.setColorByGroupId("TW-TAO", "rgba(249, 163, 3,1)");
+	twMap.setColorByGroupId("TW-NWT", "rgba(241, 77, 73,1)");
+	twMap.setLinkByGroupId("TW-TAO", "https://www.ewant.org/local/enterprise/collegepage.php?id=217");
+});
+
+
 
 var arr = [];
 
@@ -701,7 +774,12 @@ $(".en-item").mouseleave(function(event){
 
 	}
 	
-});     
+});  
+
+
+
+
+   
 </script>
 </body>
 </html>

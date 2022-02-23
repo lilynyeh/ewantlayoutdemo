@@ -33,6 +33,7 @@ h2{
 .nav-container{
 	display: flex;
 	align-items: center;
+	text-decoration: none;
 }
 .nav-bar img{
 	max-width: 120px;
@@ -45,6 +46,10 @@ h2{
 .nav-bar .nav ul li{
 	line-height: 1em;
 	padding: 10px;
+}
+.nav-container a{
+	text-decoration: none;
+	color: #fff;
 }
 .nav-container .nav-right{
     display: flex;
