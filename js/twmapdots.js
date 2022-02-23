@@ -2,7 +2,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.5345,
 								"latitude": 26.261,
 								"type": "circle",
@@ -15,7 +15,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.6233,
 								"latitude": 26.261,
 								"type": "circle",
@@ -28,7 +28,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.4456,
 								"latitude": 26.1801,
 								"type": "circle",
@@ -54,7 +54,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.6233,
 								"latitude": 26.1801,
 								"type": "circle",
@@ -67,7 +67,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.2679,
 								"latitude": 26.0993,
 								"type": "circle",
@@ -80,7 +80,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.3568,
 								"latitude": 26.0993,
 								"type": "circle",
@@ -93,7 +93,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.4456,
 								"latitude": 26.0993,
 								"type": "circle",
@@ -132,7 +132,7 @@ var dots =[
 							{
 								"groupId": "TW-KEE",
 								"selectable": true,
-								"title": "Keelung",
+								"title": "基隆 Keelung",
 								"longitude": 120.7122,
 								"latitude": 26.0993,
 								"type": "circle",
@@ -143,9 +143,22 @@ var dots =[
 								"fixedSize": false
 							},
 							{
+								"groupId": "TW-KEE",
+								"selectable": true,
+								"title": "基隆 Keelung",
+								"longitude": 120.7122,
+								"latitude": 26.1801,
+								"type": "circle",
+								"color": "rgba(173,210,233,1)",
+								"width": 12,
+								"height": 12,
+								"scale": 1,
+								"fixedSize": false
+							},
+							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.8011,
 								"latitude": 26.0993,
 								"type": "circle",
@@ -158,7 +171,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.8899,
 								"latitude": 26.0993,
 								"type": "circle",
@@ -171,7 +184,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.0902,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -184,7 +197,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.179,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -197,7 +210,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.2679,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -210,7 +223,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.3568,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -223,7 +236,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.4456,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -262,7 +275,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.7122,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -275,7 +288,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.8011,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -288,7 +301,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.8899,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -301,7 +314,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.9788,
 								"latitude": 26.0183,
 								"type": "circle",
@@ -327,7 +340,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.0902,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -340,7 +353,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.179,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -353,7 +366,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.2679,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -366,7 +379,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.3568,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -379,7 +392,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.4456,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -392,7 +405,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.5345,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -405,7 +418,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.6233,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -418,7 +431,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.7122,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -431,7 +444,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.8011,
 								"latitude": 25.9373,
 								"type": "circle",
@@ -483,7 +496,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.179,
 								"latitude": 25.8563,
 								"type": "circle",
@@ -496,7 +509,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.2679,
 								"latitude": 25.8563,
 								"type": "circle",
@@ -509,7 +522,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.3568,
 								"latitude": 25.8563,
 								"type": "circle",
@@ -522,7 +535,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.4456,
 								"latitude": 25.8563,
 								"type": "circle",
@@ -535,7 +548,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.5345,
 								"latitude": 25.8563,
 								"type": "circle",
@@ -548,7 +561,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.6233,
 								"latitude": 25.8563,
 								"type": "circle",
@@ -561,7 +574,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.7122,
 								"latitude": 25.8563,
 								"type": "circle",
@@ -652,7 +665,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.3568,
 								"latitude": 25.7752,
 								"type": "circle",
@@ -665,7 +678,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.4456,
 								"latitude": 25.7752,
 								"type": "circle",
@@ -678,7 +691,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.5345,
 								"latitude": 25.7752,
 								"type": "circle",
@@ -795,7 +808,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.3568,
 								"latitude": 25.694,
 								"type": "circle",
@@ -808,7 +821,7 @@ var dots =[
 							{
 								"groupId": "TW-TAO",
 								"selectable": true,
-								"title": "桃園市 Taoyuani ➚",
+								"title": "桃園市 Taoyuani ➤",
 								"longitude": 120.4456,
 								"latitude": 25.694,
 								"type": "circle",
@@ -821,7 +834,7 @@ var dots =[
 							{
 								"groupId": "TW-NWT",
 								"selectable": true,
-								"title": "新北市 New Taipei ➚",
+								"title": "新北市 New Taipei ➤",
 								"longitude": 120.5345,
 								"latitude": 25.694,
 								"type": "circle",
