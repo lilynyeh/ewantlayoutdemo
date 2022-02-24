@@ -420,6 +420,7 @@
 			margin: 0 5px 10px 5px;
 			box-shadow: 0 0 2px 0 rgb(0 0 0 / 27%);
 			position: relative;
+			overflow: hidden;
 		}
 		.video-item img {
 			width: 100%;
@@ -436,18 +437,16 @@
 			right: 0;
 			text-align: center;
 			color: #fff;
-			opacity: 0;
 			cursor: pointer;
+			justify-content: center;
+			
+			transform: translateY(70%);
+			transition: transform 330ms ease-in-out;
+
 		}
 		.video-item:hover .video-title{
-			opacity: 1;
-			justify-content: center;
+			transform: translateY(0);
 			align-items: center;
-			-webkit-animation: fadein .3s; 
-			-moz-animation: fadein .3s;  
-			-ms-animation: fadein .3s; 
-			 -o-animation: fadein .3s; 
-				animation: fadein .3s; 
 		}
 	</style>
 	
