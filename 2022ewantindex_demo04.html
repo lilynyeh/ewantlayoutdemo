@@ -392,7 +392,63 @@
 			from { opacity: 0; }
 			to   { opacity: 1; }
 		}
-
+		.news{
+			display: flex;
+		}
+		.news-left-content{
+			width: 70%;
+		}
+		.news-right-content{
+			width: 30%;
+			text-align: center;
+		}
+		.news-right-content i{
+			padding: 0 5px;
+		}
+		
+		.video-cotent{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.video-item {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 10px;
+			flex-direction: column;
+			width: 150px;
+			margin: 0 5px 10px 5px;
+			box-shadow: 0 0 2px 0 rgb(0 0 0 / 27%);
+			position: relative;
+		}
+		.video-item img {
+			width: 100%;
+		}
+		.video-title {
+			display: flex;
+			position: absolute;
+			background: #3a3a3aa6;
+			width: 100%;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			left: 0;
+			right: 0;
+			text-align: center;
+			color: #fff;
+			opacity: 0;
+			cursor: pointer;
+		}
+		.video-item:hover .video-title{
+			opacity: 1;
+			justify-content: center;
+			align-items: center;
+			-webkit-animation: fadein .3s; 
+			-moz-animation: fadein .3s;  
+			-ms-animation: fadein .3s; 
+			 -o-animation: fadein .3s; 
+				animation: fadein .3s; 
+		}
 	</style>
 	
 
@@ -521,22 +577,67 @@
 	  </div>
 </div>
 <div class='news container'>
-	<h2>網站公告Latest News</h2>
-	<div class='news-content'>
-		<div class="time">2022年 01月 26日(三) 13:49</div>
-		<div class="title">【平台公告】ewant育網1/28(五)至2/7(一) 客服暫停服務</div>
+	<div class="news-left-content">
+		<h2>網站公告Latest News</h2>
+		<div class='news-content'>
+			<div class="time">2022年 01月 26日(三) 13:49</div>
+			<div class="title">【平台公告】ewant育網1/28(五)至2/7(一) 客服暫停服務</div>
+		</div>
+		<div class='news-content'>
+			<div class="time">2020年 09月 15日(二) 10:34</div>
+			<div class="title">【新手上路】ewant上課簡單上手</div>
+		</div>
+		<div class='news-content'>
+			<div class="time">2021年 09月 29日(三) 18:35</div>
+			<div class="title">【平台公告】ewant育網歡迎您，免費註冊，立即選課</div>
+		</div>
+		<div class='news-content'>
+			<div class="more">
+				過期的主題 ...
+			</div>
+		</div>
 	</div>
-	<div class='news-content'>
-		<div class="time">2020年 09月 15日(二) 10:34</div>
-		<div class="title">【新手上路】ewant上課簡單上手</div>
-	</div>
-	<div class='news-content'>
-		<div class="time">2021年 09月 29日(三) 18:35</div>
-		<div class="title">【平台公告】ewant育網歡迎您，免費註冊，立即選課</div>
-	</div>
-	<div class='news-content'>
-		<div class="more">
-			過期的主題 ...
+	<div class="news-right-content">
+		<h3><i class="fa-solid fa-forward"></i>一分鐘了解ewant</h3>
+		<div class="video-cotent">
+			<div class="video-item">
+				<img id="img" class="style-scope yt-img-shadow" alt="" src="https://i.ytimg.com/vi/FUlXXQntml0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfQXdOP0XjvlCUbAtaiJEWfB0Zww">
+				<div class="video-title">
+					【ewant介紹篇】
+				</div>
+			</div>
+			<div class="video-item">
+				<img id="img" class="style-scope yt-img-shadow" alt="" src="https://i.ytimg.com/vi/5D2D3Sm7SMI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAUb_28Gt0vhFhx5jMI61I909pc1Q">
+				<div class="video-title">
+					【使用篇】
+				</div>
+			</div>
+			<div class="video-item">
+				<img id="img" class="style-scope yt-img-shadow" alt="" src="https://i.ytimg.com/vi/NFAJGiBn5xo/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAKl7HK8SWnJmGr0uF_bUzFShCyCA">
+				<div class="video-title">
+					【高中生篇】
+				</div>
+			</div>
+			<div class="video-item">
+				<img id="img" class="style-scope yt-img-shadow" alt="" src="https://i.ytimg.com/vi/ppA7PVrOCUU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQuBViRoMunWXJq94JiP-m3Hi9VA">
+				<div class="video-title">
+					【高中老師篇】
+				</div>
+			</div>
+			<div class="video-item">
+				<img id="img" class="style-scope yt-img-shadow" alt="" src="https://i.ytimg.com/vi/XV7FK_5tbFI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDAdidVk1eb9mBAZYsxDRZmkQHH7A">
+				<div class="video-title">
+					【大學生篇】
+				</div>
+			</div>
+			<div class="video-item">
+				<img id="img" class="style-scope yt-img-shadow" alt="" src="https://i.ytimg.com/vi/Zq05WrB9xLs/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAZULsc_XevEcSqd3bLfeQtu3WEfA">
+				<div class="video-title">
+					【大學生ＳＯＳ篇】
+				</div>
+			</div>
+			
+			
 		</div>
 	</div>
 </div>

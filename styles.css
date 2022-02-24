@@ -67,12 +67,11 @@ h2{
 
 .news{
 	background-color: #f7f7f7;
-	margin: 30px auto;
 }
 .news .news-content{
 	display: flex;
 	width: 100%;
-    margin: 0 15px 0 15px;
+    /*margin: 0 15px 0 15px;*/
     padding: 15px 0 15px 0;
 }
 .news .news-content:not(:last-child){
@@ -133,135 +132,3 @@ h2{
 	text-align: center;
 	
 }
-
-=======
-body{
-	margin: 0 0;
-	background: #f7f7f7;
-	font-size: 16px;
-	font-family: PingFang TC,微軟正黑體,sans-serif;
-	color: #545251;
-	font-size: 16px;
-
-}
-ul{
-	list-style: none;
-}
-h2{
-	font-size: 34px;
-	line-height: 1.5em;
-	border-bottom: 1px solid #d6d6d6;
-	text-align: center;
-	color: #1d65a6;
-	padding: 20px 15px;
-	margin: 0 0 20px 0;
-}
-
-
-.container{
-    max-width: 1240px;
-		margin: 0 auto;
-}
-.nav-bar{
-	background-color: #1d65a5;
-	color: #fff;
-}
-.nav-container{
-	display: flex;
-	align-items: center;
-}
-.nav-bar img{
-	max-width: 120px;
-	height: auto;
-}
-.nav-bar .nav ul{
-	display: flex;
-	padding-left: 0;
-}
-.nav-bar .nav ul li{
-	line-height: 1em;
-	padding: 10px;
-}
-.nav-container .nav-right{
-    display: flex;
-	margin-left: auto;
-}
-.header{
-	background-color: #72a2c0;
-		text-align: center;
-		width: 100%;
-}
-.header .banner{
-    padding: 10px 0 20px 0;
-	margin: 0 auto;
-}
-
-.news{
-	background-color: #f7f7f7;
-	margin: 30px auto;
-}
-.news .news-content{
-	display: flex;
-	width: 100%;
-    margin: 0 15px 0 15px;
-    padding: 15px 0 15px 0;
-}
-.news .news-content:not(:last-child){
-	border-bottom: 2px dotted #d6d6d6;
-}
-.news .news-content .time{
-	width: 30%;
-}
-.news .news-content .title{
-	width: 70%;
-}
-.news .title, .news .more{
-	color: #1d65a5;
-}
-
-.courselist-contents{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 30px auto;
-}
-.courselist-contents .course-item{
-	height: 350px;
-	box-shadow: 0 0 2px 0 rgb(0 0 0 / 27%);
-	margin: 10px 0;
-    padding: 10px;
-	width: 24%;
-	box-sizing: border-box;
-}
-.courselist-contents .course-item .course-img{
-	height: 200px;
-	background-color: #ccc;
-}
-.courselist-contents .course-item .course-content h3{
-	text-align: center;
-	color: #1d65a6;
-    font-weight: 700;
-}
-
-.footer{
-	background: #72a2c0;
-	color: #fff;
-}
-.footer .contents{
-	display: flex;
-
-}
-.footer ul li{
-	padding: 5px 0;
-}
-.footer .contents .item{
-	min-height: 200px;
-	width: 30%;
-}
-.footer .copy-right{
-	padding: 20px 0;
-	background: #1d65a6;
-	text-align: center;
-	
-}
-
