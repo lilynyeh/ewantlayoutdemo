@@ -27,31 +27,31 @@
 		  background-color: #7e57c2;
 		  margin: 0 auto;
 		}
-		.en-item:nth-child(1){
+		.en-item:nth-child(n){
 		  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
 		  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
 		}
-		.en-item:nth-child(2){
+		.en-item:nth-child(2n){
 		  background-color: #f14d49;
 		  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
 		}
-		.en-item:nth-child(3){
+		.en-item:nth-child(3n){
 		  background-color: #f9a303;
 		  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
 		}
-		.en-item:nth-child(4){
+		.en-item:nth-child(4n){
 		  background-color: #4caf50;
 		  background-image: linear-gradient(-60deg, #4caf50 0%, #f4d03f 100%);
 		}
-		.en-item:nth-child(5){
+		.en-item:nth-child(5n){
 		  background-color: #03a9f4;
 		  background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
 		}
-		.en-item:nth-child(6){
+		.en-item:nth-child(6n){
 		  background-color: #1d65a5;
 		  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
 		}
-		.en-item:nth-child(7){
+		.en-item:nth-child(7n){
 		  background-color: #1d65a5;
 		  background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
 		}
@@ -63,6 +63,7 @@
 		    -webkit-animation: expandWidth 1s 1 forwards, expandHeight 1.5s 1 forwards;
 		    border-radius: 0;
 		}
+		
 		.en-item.shrink
 		{
 		  transition: all 2.4s ease-in-out; 
@@ -87,6 +88,14 @@
 			-ms-animation: fadein 2s; 
 			 -o-animation: fadein 2s; 
 				animation: fadein 2s; 
+		}
+		.enterprise .expand .content {
+			opacity: 0;
+			animation-name: fadein;
+			animation-delay: .5s;
+			animation-duration:1s;
+			animation-fill-mode: forwards;
+
 		}
 		
 		.enterprise .container .icon{
@@ -120,6 +129,19 @@
 		.enterprise .content li:hover a:before{
 			content: "▸";
 		}
+		
+		.en-item.expand .container{
+		   height: 60px;
+		}
+		.en-item.expand .title{
+			width: 200px;
+		}
+		.en-item.expand .icon{
+			font-size: 30px;
+			width: 100px;
+		}
+
+		
 		
 		.headerbeneath {
 			position: relative;
