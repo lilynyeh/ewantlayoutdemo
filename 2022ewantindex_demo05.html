@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ewantindex_demp01</title>
+	<title>ewantindex_demp05</title>
 	<meta charset="utf-8"> 
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -81,7 +81,7 @@
 		  width: 150px;
 		}
 		.enterprise .container .title{
-		  font-size: calc(1vw + 1vh);
+		  font-size: 1.5em;
 		  width: 150px;
 		}
 		.enterprise .content{
@@ -93,23 +93,9 @@
 		  padding-left: 10px;
 		}
 		.enterprise .content li{
-			line-height: 1.1em;
-			font-size: 1.2em;
-			padding: .5em 0 0 0;
-			position: relative;
+		  line-height: 1.5em;
+		  font-size: 1.2em;
 		}
-		.enterprise .content li:before {
-			content: "";
-			position: absolute;
-			width: 5px;
-			top: 50%;
-			background: #fff8f8;
-			left: -10px;
-			height: 5px;
-			transform: translateY(50%);
-		}
-
-
 		.enterprise .content a{
 			text-decoration: none;
 			color: #fff;
@@ -118,22 +104,15 @@
 			/*margin-left: 2px;*/
 			font-weight: 700;
 		}
-		/*.enterprise .content li:hover a:before{
+		.enterprise .content li:hover a:before{
 			content: "▸";
-		}*/
-		
-		.headerbeneath {
-			position: relative;
-			max-width: 680px;
-			margin: 0 auto 0;
 		}
+		
+
 		.headerbeneath .container {
 			display: flex;
 			line-height: 2em;
 			font-size: 1.2em;
-			position: absolute;
-			top: -50px;
-			z-index: 2;
 			justify-content: center;
 			left: 0;
 			right: 0;
@@ -145,7 +124,7 @@
 			background-color: #ffffff;
 			color: #72a2c0;
 			display: flex;
-			/*flex-direction: column*/;
+			/*flex-direction: column;*/
 			align-items: center;
 			text-decoration: none;
 			box-shadow: 0 0 3px 0 rgb(0 0 0 / 27%);
@@ -416,22 +395,6 @@
 	</div>
 </div>
 
-<div class="headerbeneath">
-	<div class="container ">
-		<a href="#map" class="hb-item">
-			<i class="icon fa-solid fa-map-location-dot"></i>
-			<div class="hb-title">高中數位教學專區</div>
-		</a>
-
-		<a class="hb-item"  onclick="location.href='https://www.ewant.org/admin/tool/mooccourse/mnetcourseinfo.php?hostid=13&amp;id=3302'">
-			<i class="icon fa-solid fa-book-open"></i>
-			<div class="hb-title">流通冷鏈管理師</div>
-		</a>
-
-	</div>
-</div>
-
-
 <div class='enterprise'>
 	<div class="wrap">
 	    <div class='en-item'>
@@ -460,7 +423,7 @@
 
 	      <div class='content'>
 	        <ul>
-				<li><a href="#">跨校通識學分跨校通識學分</a></li>
+				<li><a href="#">跨校通識學分</a></li>
 				<li><a href="#">SOS暑期線上學院</a></li>
 	        </ul> 
 	      </div>
@@ -513,6 +476,22 @@
 	    
 	  </div>
 </div>
+<div class="headerbeneath">
+	<div class="container ">
+		<a href="#map" class="hb-item">
+			<i class="icon fa-solid fa-map-location-dot"></i>
+			<div class="hb-title">高中數位教學專區</div>
+		</a>
+
+		<a class="hb-item"  onclick="location.href='https://www.ewant.org/admin/tool/mooccourse/mnetcourseinfo.php?hostid=13&amp;id=3302'">
+			<i class="icon fa-solid fa-book-open"></i>
+			<div class="hb-title">流通冷鏈管理師</div>
+		</a>
+
+	</div>
+</div>
+
+
 <div class='news container'>
 	<h2>網站公告Latest News</h2>
 	<div class='news-content'>
@@ -704,7 +683,6 @@ $(".en-item").mouseenter(function(event){
 		}, 50);
 	}
 });
-
 
 
 $(".en-item").mouseleave(function(event){
