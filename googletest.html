@@ -5,10 +5,12 @@ const urlParams = new URLSearchParams(url);
 const token = urlParams.get('access_token');
 const redirectUrl =urlParams.get('state');
 console.log(token, redirectUrl);
-// if(token == null || redirectUrl == ''){
-//    retrun;
-// }else{
-//    window.location.href = redirectUrl+"?mini-token="+token;
+if(token == null || redirectUrl == ''){
+   retrun;
+}else{
+      let obj = JSON.parse(redirectUrl);
+      console.log(obj);
+      window.location.href = obj.ori+"?mini-token="+token;
 //     $.ajax({
 //         url: 'https://www.googleapis.com/oauth2/v3/userinfo',
 //         beforeSend: function(xhr) {
@@ -17,5 +19,5 @@ console.log(token, redirectUrl);
 //             console.log(data);
 //         }
 //     })
-// }
+}
 </script>
