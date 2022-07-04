@@ -1,0 +1,15 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+const url = window.location.hash.replace("#", "?");
+const urlParams = new URLSearchParams(url);
+const token = urlParams.get('access_token');
+console.log(token);
+$.ajax({
+    url: 'https://www.googleapis.com/oauth2/v3/userinfo',
+    beforeSend: function(xhr) {
+         xhr.setRequestHeader("Authorization", "Bearer "+token)
+    }, success: function(data){
+        console.log(data);
+    }
+})
+</script>
