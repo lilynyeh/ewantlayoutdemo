@@ -4,7 +4,7 @@ const url = window.location.hash.replace("#", "?");
 const urlParams = new URLSearchParams(url);
 const token = urlParams.get('access_token');
 const redirectUrl =urlParams.get('state');
-console.log(token);
+console.log(token, redirectUrl);
 if(token == null || redirectUrl == ''){
    retrun;
 }else{
