@@ -8,9 +8,10 @@ console.log(token, redirectUrl);
 if(token == null || redirectUrl == ''){
    retrun;
 }else{
-      let obj = JSON.parse(redirectUrl);
-      console.log(obj);
-      window.location.href = obj.ori+"?mini-token="+token;
+   var decodedString = atob(redirectUrl); 
+   let obj = JSON.parse(decodedString);
+   console.log(obj);
+   window.location.href = obj.ori+"?mini-token="+token;
 //     $.ajax({
 //         url: 'https://www.googleapis.com/oauth2/v3/userinfo',
 //         beforeSend: function(xhr) {
