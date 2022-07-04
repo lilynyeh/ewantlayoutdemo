@@ -1,12 +1,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     const url = window.location.hash.replace("#", "?");
-    if(url == null){
-        retrun;
-    }else{
-        const urlParams = new URLSearchParams(url);
-        const token = urlParams.get('access_token');
-        console.log(token);
+    const urlParams = new URLSearchParams(url);
+    const token = urlParams.get('access_token');
+    console.log(token);
+   if(token == null){
+       retrun;
+   }else{
         $.ajax({
             url: 'https://www.googleapis.com/oauth2/v3/userinfo',
             beforeSend: function(xhr) {
