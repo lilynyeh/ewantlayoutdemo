@@ -6,13 +6,14 @@
     console.log(token);
     if(toke == null){
         retrun;
+    }else{
+        $.ajax({
+            url: 'https://www.googleapis.com/oauth2/v3/userinfo',
+            beforeSend: function(xhr) {
+                 xhr.setRequestHeader("Authorization", "Bearer "+token)
+            }, success: function(data){
+                console.log(data);
+            }
+        })
     }
-    $.ajax({
-        url: 'https://www.googleapis.com/oauth2/v3/userinfo',
-        beforeSend: function(xhr) {
-             xhr.setRequestHeader("Authorization", "Bearer "+token)
-        }, success: function(data){
-            console.log(data);
-        }
-    })
 </script>
