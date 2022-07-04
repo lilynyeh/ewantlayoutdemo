@@ -5,17 +5,17 @@ const urlParams = new URLSearchParams(url);
 const token = urlParams.get('access_token');
 const redirectUrl =urlParams.get('state');
 console.log(token, redirectUrl);
-if(token == null || redirectUrl == ''){
-   retrun;
-}else{
-   window.location.href = redirectUrl+"?mini-token="+token;
-    $.ajax({
-        url: 'https://www.googleapis.com/oauth2/v3/userinfo',
-        beforeSend: function(xhr) {
-             xhr.setRequestHeader("Authorization", "Bearer "+token)
-        }, success: function(data){
-            console.log(data);
-        }
-    })
-}
+// if(token == null || redirectUrl == ''){
+//    retrun;
+// }else{
+//    window.location.href = redirectUrl+"?mini-token="+token;
+//     $.ajax({
+//         url: 'https://www.googleapis.com/oauth2/v3/userinfo',
+//         beforeSend: function(xhr) {
+//              xhr.setRequestHeader("Authorization", "Bearer "+token)
+//         }, success: function(data){
+//             console.log(data);
+//         }
+//     })
+// }
 </script>
