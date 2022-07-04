@@ -1,19 +1,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-    const url = window.location.hash.replace("#", "?");
-    const urlParams = new URLSearchParams(url);
-    const token = urlParams.get('access_token');
-    console.log(token);
-   if(token == null){
-       retrun;
-   }else{
-        $.ajax({
-            url: 'https://www.googleapis.com/oauth2/v3/userinfo',
-            beforeSend: function(xhr) {
-                 xhr.setRequestHeader("Authorization", "Bearer "+token)
-            }, success: function(data){
-                console.log(data);
-            }
-        })
+let redirectUrl = getCookie("mini_redirect_url");
+const url = window.location.hash.replace("#", "?");
+const urlParams = new URLSearchParams(url);
+const token = urlParams.get('access_token');
+console.log(token);
+if(token == null || redirectUrl == ''){
+   retrun;
+}else{
+   document.cookie = "mini-token="+token;
+   window.location.href = redirectUrl;
+    $.ajax({
+        url: 'https://www.googleapis.com/oauth2/v3/userinfo',
+        beforeSend: function(xhr) {
+             xhr.setRequestHeader("Authorization", "Bearer "+token)
+        }, success: function(data){
+            console.log(data);
+        }
+    })
+}
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
     }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}    
 </script>
